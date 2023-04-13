@@ -12,10 +12,7 @@ class EcommerceApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(
-          primarySwatch: Colors.deepOrange, 
-          ),
-      initialRoute: "/", //bydefault it's /
+      initialRoute: MyRoutes.homeRoute, //bydefault it's /
       routes: {
         "/": (context) => LoginPage(),
         MyRoutes.homeRoute: (context) => HomePage(),
